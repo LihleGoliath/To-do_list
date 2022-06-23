@@ -61,7 +61,7 @@ LoopArray(list);
 document.querySelector("button").addEventListener("click", (id)=>{
   list.forEach(item => {
       const index =list.findIndex(item => item.id == id);
-   if (item.id == index,button == .delete) {
+   if (item.id == index) {
     list.splice(index,1);
    }
   });
