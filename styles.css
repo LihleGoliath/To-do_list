@@ -1,0 +1,34 @@
+:root{
+--main_color-- :royalblue;
+}    
+    body{
+        background-color: var(--main_color--);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    #conTainer{
+    width: fit-content;
+    }
+    #btn-modal{
+        height: 40px;
+        margin: 10px;
+    }
+    .delete{
+        height: 40px;
+        margin: 10px;
+    }
+    #text{
+        padding: 8px;
+        width: 30vw;
+    }
+    #btn-additem{
+        
+    }
+    .strike:checked + label{
+        text-decoration: line-through;
+    }
+    #clear{
+        margin: auto;
+    }
