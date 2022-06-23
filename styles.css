@@ -18,17 +18,18 @@
     .delete{
         height: 40px;
         margin: 10px;
+       
     }
+  
     #text{
         padding: 8px;
         width: 30vw;
     }
-    #btn-additem{
-        
-    }
+ 
     .strike:checked + label{
         text-decoration: line-through;
     }
+
     #clear{
         margin: auto;
     }

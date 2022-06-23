@@ -1,4 +1,6 @@
 let list = JSON.parse(localStorage.getItem( "list"))?JSON.parse(localStorage.getItem("list")) : [ ];
+
+
 function LoopArray(items){
     document.querySelector("#list").innerHTML = " ";
 list.forEach(item => {  
@@ -10,7 +12,8 @@ list.forEach(item => {
     <button type="button" class="btn btn-primary " id="btn-modal" data-bs-toggle="modal" data-bs-target="#item${item.id}">
       edit
     </button>   
-    <button type="button"  class="btn btn-danger  delete" id="${item.id}"  >delete</button>
+    <div id="deleteitem"></div>
+  
   <p>${item.createdDate}</p>
   
   <!-- Modal -->
@@ -32,7 +35,11 @@ list.forEach(item => {
   </div>
   
 
-    `
+  `
+  document.querySelector('#conTainer').addEventListener("mouseover",function (e){
+  document.querySelector('#deleteitem').innerHTML=` <button type="button"  class="btn btn-danger  delete" id="${item.id}"  >delete</button>`});
+  document.querySelector('#conTainer').addEventListener("mouseout",function (e){
+    document.querySelector('#deleteitem').innerHTML=` `});
     console.log(list);
 });
     
